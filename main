@@ -1,1 +1,32 @@
 
+package main;
+
+import hilos.Hilos;
+import hilos.Sumatoria;
+import hilos.Primos;
+import hilos.Factorial;
+import hilos.Fibonacci;
+
+
+public class Main 
+{
+	
+	public static void main(String[] args)
+	{
+		
+		
+		Hilos uno = new Hilos(8);
+	    Fibonacci dos = new Fibonacci(10);
+		Primos tres = new Primos(2);
+		Factorial cuatro = new Factorial(9);
+		Sumatoria cinco = new Sumatoria(5);
+		
+		uno.start();
+		dos.start();
+		tres.start();
+		cuatro.start();
+		cinco.start();
+		
+	}
+
+}
